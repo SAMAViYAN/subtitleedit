@@ -1,337 +1,387 @@
-; *** Inno Setup version 5.5.3+ English messages ***
-;Translator:Hessam Mohamadi-Improved And Updated
-;Email:hessam55@hotmail.com
+; *** Inno Setup version 5 ***
+
+; Farsi(Persian) messages
+; Translator: SAMAVi
+; Email: 3dc24c54@opayq.com
+; http://www.samavi.info
+
 ; To download user-contributed translations of this file, go to:
-;   http://www.jrsoftware.org/files/istrans/
+; http://www.jrsoftware.org/is3rdparty.php
 ;
-; Note: When translating this text, do not add periods (.) to the end of
-; messages that didn't have them already, because on those messages Inno
-; Setup adds the periods automatically (appending a period would result in
-; two periods being displayed).
 
 [LangOptions]
 ; The following three entries are very important. Be sure to read and 
 ; understand the '[LangOptions] section' topic in the help file.
 LanguageName=Farsi
 LanguageID=$0429
-LanguageCodePage=0
+LanguageCodePage=1256
 ; If the language you are translating to requires special font faces or
 ; sizes, uncomment any of the following entries and change them accordingly.
 DialogFontName=Tahoma
 DialogFontSize=8
 WelcomeFontName=Tahoma
-WelcomeFontSize=11
+WelcomeFontSize=12
 TitleFontName=Tahoma
-TitleFontSize=28
+TitleFontSize=29
 CopyrightFontName=Tahoma
 CopyrightFontSize=8
 
 [Messages]
 
 ; *** Application titles
-SetupAppTitle=ัวๅ วไฯวา
-SetupWindowTitle=%1 - ัวๅ วไฯวา
-UninstallAppTitle=อะÝ ศัไวใๅ
-UninstallAppFullTitle=%1 อะÝ ศัไวใๅ
+SetupAppTitle=ูุตุจ
+SetupWindowTitle= %1
+UninstallAppTitle=ุญุฐู ุจุฑูุงู…ู
+UninstallAppFullTitle=  %1 ุญุฐู ุจุฑูุงู…ู
 
 ; *** Misc. common
-InformationTitle=วุแวฺวส
-ConfirmTitle=สีฯํÞ
-ErrorTitle=ฮุว
+InformationTitle=ุงุทูุงุนุงุช
+ConfirmTitle=ุชุงููุฏูู
+ErrorTitle= ุฎุทุง
 
 ; *** SetupLdr messages
-SetupLdrStartupMessage=ัว ไีศ ฮๆวๅฯ ัฯ.ยํว วฯวใๅ ใํฯๅํฯฟ %1 วํไ
-LdrCannotCreateTemp=Ýวํแ ใๆÞสํ ไใํสๆวไฯ ำวฮสๅ ิๆฯ. ไีศ แÛๆ ิฯ
-LdrCannotExecTemp=Þวฯั ศๅ วฬัวํ Ýวํแ ฯั ๆิๅ ใๆÞสํ ไํำส. ไีศ แÛๆ ิฯ
+SetupLdrStartupMessage=ุจุฑูุงู…ู ูุตุจ ุฎูุงูุฏ ุดุฏ. ุขูุง ุงุฏุงู…ู ู…ูโ€ุฏููุฏุ
+LdrCannotCreateTemp=ูุงูู ู…ููุชู ูู…ูโ€ุชูุงูุฏ ุณุงุฎุชู ุดูุฏ. ูุตุจ ูุบู ุดุฏ
+LdrCannotExecTemp=ูุงูู ูู…ูโ€ุชูุงูุฏ ุฏุฑ ูพูุดูโ€ู ู…ููุชู ุงุฌุฑุง ุดูุฏ. ูุตุจ ูุบู ุดุฏ
+LastErrorMessage=%1.%n%n  ุฎุทุง   %2 : %3
 
 ; *** Startup error messages
-LastErrorMessage=%1.%n%nฮุว %2: %3
-SetupFileMissing=วา ๆิๅ ไีศ ํวÝส ไใํิๆฯ.แุÝว ใิแ ัว ศัุัÝ ัฯๅ ํว ไำฮๅ ฬฯํฯํ วา ศัไวใๅ ัว สๅํๅ ไํฯ %1 Ýวํแ
-SetupFileCorrupt=Ýวํแๅวํ ัวๅ วไฯวา ฮัวศ ๅำสไฯกแุÝว ไำฮๅ ฬฯํฯํ วา ศัไวใๅ ัว Ýัวๅใ ไใวํํฯ
-SetupFileCorruptOrWrongVer=Ýวํแ ๅวํ ไีศ ฮัวศ ิฯๅวไฯก ํว ศว วํไ ไำฮๅ วา ไีศ ไวๅใวๅไ ใํศวิไฯ.แุÝว ใิแ ัว ศัุัÝ ไใวํํฯ ํว ไำฮๅ ฬฯํฯํ วา ศัไวใๅ ัว Ýัวๅใ ไใวํํฯ
-InvalidParameter=ํ วัวใสั ไวใฺสศั ฯั Ýัใวไ ฮุํ ัฯ ิฯๅ วำส:%n%n%1
-SetupAlreadyRunning=ศัไวใๅ ไีศ วา Þศแ ฯั ว๖ฬัวำส
-WindowsVersionNotSupported=วํไ ศัไวใๅ วา ไำฮๅ ๆํไฯๆาํ ๅ ัวํวไๅ ิใว ฯั อวแ ว๖ฬัวำสกิสํศวไํ ไใํไฯ
-WindowsServicePackRequired=วํไ ศัไวใๅ ไํวา ศๅ %1 ำัๆํำ ๓ %2 ํว ศวแวสั ไํวา ฯวัฯ
-NotOnThisPlatform=วฬัว ไใํิๆฯ %1 วํไ ศัไวใๅ ฯั
-OnlyOnThisPlatform=วฬัว ิๆฯ %1 วํไ ศัไวใๅ ศวํฯ ฯั
-OnlyOnTheseArchitectures=วํไ ศัไวใๅ สไๅว ฯั ไำฮๅๅวํํ วา ๆํไฯๆา ๅ ศัวํ ัฯวาิัๅวํํ ศว ใฺใวัํๅวํ าํั ุัวอํ ิฯๅ วำสก ใํสๆวไฯ ไีศ ิๆฯ:%n%n%1
-MissingWOW64APIs=ไีศ ไํฯ %1 วํไ ไำฮๅ วา ๆํไฯๆา ๅ วไๆไ ฯั วฬัว ใํศวิฯ ิวใแ สๆวศฺ ใๆัฯ ไํวา ศัวํ ไีศ ิีส ๆ ๅวั ศํสํ ไํำสกศัวํ สีอํอ วํไ ใิแกแุÝว ำัๆํำ 
-WinVersionTooLowError=วํไ ศัไวใๅ ไํวา ศๅ %1 ไำฮๅ %2 ํวศวแวสั ไํวา ฯวัฯ
-WinVersionTooHighError=วํไ ศัไวใๅ ไใํสๆวไฯ ฯั %1 ไำฮๅ %2 ํว ศวแวสั วฬัว ิๆฯ
-AdminPrivilegesRequired=ศัวํ ไีศ วํไ ศัไวใๅก ิใว ศวํฯ ศๅ ฺไๆวไ ใฯํั ำํำสใ ๆวัฯ ิๆํฯ
-PowerUserPrivilegesRequired=ศัวํ ไีศ วํไ ศัไวใๅก ิใว ศวํฯ ศๅ ฺไๆวไ ใฯํั ำํำสใ ํว ฺึๆํ วา วัศัวไ ใฬวา ๆวัฯ ิๆํฯ
-SetupAppRunningError=วไๆไ ฯัวฬัว วำส %1 ัวๅ วไฯวา สิฮํี ฯวฯๅ%n%nแุÝว อวแว ๅใๅ ไใๆไๅ ๅว ัว ศำสๅกำำ ัๆํ สวํํฯ ศัวํ วฯวใๅกแÛๆ ศัวํ ฮัๆฬ แํ ไํฯ
-UninstallAppRunningError=วไๆไ ฯัวฬัว วำส %1 อะÝ ไไฯๅ สิฮํี ฯวฯๅ%n%nแุÝว อวแว ๅใๅ ไใๆไๅ ๅว ัว ศำสๅกำำ ัๆํ สวํํฯ ศัวํ วฯวใๅกแÛๆ ศัวํ ฮัๆฬ แํ ไํฯ
+SetupFileMissing=ูุงูู ุจุฑูุงู…ู ุงุฒ ูพูุดู ูุตุจ ูุงูุช ูู…ูโ€ุดูุฏ%nุฎูุงูุดู…ูุฏ ุงุณุช ู…ุดฺฉู ุฑุง ุจุฑุทุฑู ูู…ุงููุฏ ูุง ูุณุฎูโ€ู ุฌุฏูุฏู ุงุฒ ุจุฑูุงู…ู ุฑุง ูุฑุงูู… ูู…ุงููุฏ
+SetupFileCorrupt=ูุงููโ€ูุงู ูุตุจ ุฎุฑุงุจ ุดุฏูโ€ุงูุฏ. ุฎูุงูุดู…ูุฏ ุงุณุช ูุณุฎูโ€ู ุฌุฏูุฏู ุงุฒ ุจุฑูุงู…ู ุฑุง ูุฑุงูู… ูู…ุงููุฏ
+SetupFileCorruptOrWrongVer=ูุงููโ€ูุงู ูุตุจ ุฎุฑุงุจ ุดุฏูโ€ุงูุฏุ ูุง ุจุง ุงูู ูุณุฎู ุงุฒ ูุตุจ ูุงูู…ุงููฺฏ ู…ูโ€ุจุงุดูุฏ%nุฎูุงูุดู…ูุฏ ุงุณุช ู…ุดฺฉู ุฑุง ุจุฑุทุฑู ูู…ุงููุฏ ูุง ูุณุฎูโ€ู ุฌุฏูุฏู ุงุฒ ุจุฑูุงู…ู ุฑุง ูุฑุงูู… ูู…ุงููุฏ
+NotOnThisPlatform=ุงูู ุจุฑูุงู…ู ุฏุฑ  %1  ุงุฌุฑุง ูู…ูโ€ุดูุฏ
+OnlyOnThisPlatform=ุงูู ุจุฑูุงู…ู ุจุงูุฏ ุฏุฑ  %1  ุงุฌุฑุง ุดูุฏ
+OnlyOnTheseArchitectures=: ุงูู ุจุฑูุงู…ู ุชููุง ุฏุฑ ูุณุฎูโ€ูุงูู ุงุฒ ูููุฏูุฒ ฺฉู ุจุฑุงู ูพุฑุฏุงุฒุดฺฏุฑูุงูู ุจุง ู…ุนู…ุงุฑูโ€ูุงู ุฒูุฑ ุทุฑุงุญู ุดุฏู ุงุณุชุ ู…ูโ€ุชูุงูุฏ ูุตุจ ุดูุฏ %n%n%1
+MissingWOW64APIs=ุงูู ูุณุฎู ุงุฒ ูููุฏูุฒ ุดู…ุง ฺฉู ูู…โ€ุงฺฉููู ุฏุฑ ุญุงู ุงุฌุฑุง ู…ูโ€ุจุงุดุฏุ ุชูุงูุงูู ูุงุฒู… ุจุฑุงู ูุตุจ 64ุจูุชู ุฑุง ุงุฑุงูู ูู…ูโ€ุฏูุฏ%nุจุฑุงู ุญู ุงูู ู…ุดฺฉู ุฎูุงูุดู…ูุฏ ุงุณุช ุจุณุชู ุฎุฏู…ุงุชู ู…ุงูฺฉุฑูุณุงูุช  %1 ุฑุง ูุตุจ ฺฉููุฏ
+WinVersionTooLowError=ุงูู ุจุฑูุงู…ู ุจู  %1  ููุฑุงูุด  %2  ูุง ุจุงูุงุชุฑ ุงุญุชูุงุฌ ุฏุงุฑุฏ
+WinVersionTooHighError=ุงูู ุจุฑูุงู…ู ูู…ูโ€ุชูุงูุฏ ุฏุฑ  %1  ููุฑุงูุด  %2  ูุง ุจุงูุงุชุฑ ุงุฌุฑุง ุดูุฏ
+AdminPrivilegesRequired=ุจุฑุงู ูุตุจ ุงูู ุจุฑูุงู…ูุ ุดู…ุง ู…ูโ€ุจุงูุณุช ุจู ุนููุงู ู…ุฏูุฑ ุณูุณุชู… ูุงุฑุฏ ุดููุฏ
+PowerUserPrivilegesRequired=ุจุฑุงู ูุตุจ ุงูู ุจุฑูุงู…ูุ ุดู…ุง ู…ูโ€ุจุงูุณุช ุจู ุนููุงู ู…ุฏูุฑ ุณูุณุชู… ูุง ุนุถูู ุงุฒ ฺฉุงุฑุจุฑุงู ู…ุฌุงุฒ ูุงุฑุฏ ุดููุฏ
+SetupAppRunningError=ูุตุจ ุชุดุฎูุต ุฏุงุฏู ุงุณุช ฺฉู ุงูู ุจุฑูุงู…ู ุฏุฑ ุญุงู ุงุฌุฑุงุณุช %n%n ุฎูุงูุดู…ูุฏ ุงุณุช ูู…ูโ€ู ูู…ูููโ€ูุงู ุฏุฑ ุญุงู ุงุฌุฑุงู ุขู ุฑุง ูู…โ€ุงฺฉููู ุจุจูุฏูุฏ ู ุณูพุณ  ุฑูู ุฏฺฉู…ู ุชุงููุฏ ฺฉููฺฉ ฺฉููุฏ ูุง ุจุฑุงู ูุบูุ ุฏฺฉู…ู ุงูุตุฑุงู ุฑุง ฺฉููฺฉ ูู…ุงููุฏ
+UninstallAppRunningError=ุญุฐู ุชุดุฎูุต ุฏุงุฏู ุงุณุช ฺฉู ุงูู ุจุฑูุงู…ู ุฏุฑ ุญุงู ุงุฌุฑุงุณุช %n%n ุฎูุงูุดู…ูุฏ ุงุณุช ูู…ูโ€ู ูู…ูููโ€ูุงู ุฏุฑ ุญุงู ุงุฌุฑุงู ุขู ุฑุง ูู…โ€ุงฺฉููู ุจุจูุฏูุฏ ู ุณูพุณ  ุฑูู ุฏฺฉู…ู ุชุงููุฏ ฺฉููฺฉ ฺฉููุฏ ูุง ุจุฑุงู ูุบูุ ุฏฺฉู…ู ุงูุตุฑุงู ุฑุง ฺฉููฺฉ ูู…ุงููุฏ
 
 ; *** Misc. errors
-ErrorCreatingDir=ไํำส "%1" ศัไวใๅ Þวฯั ศๅ วํฬวฯ ๆิๅ
-ErrorTooManyFilesInDir=ไํำส าํัว ยไ ใอสๆํ สฺฯวฯ าํวฯํ Ýวํแ วำส "%1" Þวฯั ศๅ วํฬวฯ Ýวํแ ฯั ๆิๅ
+ErrorCreatingDir=ูุตุจ ูู…ูโ€ุชูุงูุฏ ูพูุดูโ€  "%1"  ุฑุง ุจุณุงุฒุฏ
+ErrorTooManyFilesInDir=ูฺฉ ูุงูู ุฏุฑ ูพูุดูโ€  "%1"  ุณุงุฎุชู ูู…ูโ€ุดูุฏ%nุฒูุฑุง ุฏุฑ ุงูู ูพูุดู ุชุนุฏุงุฏ ุจูุดู…ุงุฑู ูุงูู ูุฌูุฏ ุฏุงุฑุฏ
 
 ; *** Setup common messages
-ExitSetupTitle=ฮัๆฬ วา ไีศ
-ExitSetupMessage=ไีศ วใแ ไิฯ. วั วไๆไ ฮวัฬ ิๆํฯก ศัไวใๅ ไีศ ไใํิๆฯ%n%nิใว ใํสๆวไํฯ ไีศ ัว ฯั ๆÞสํ ฯํั ฯๆศวัๅ วฬัว ไํฯ สว ไีศ วใแ ัฯฯ. ฮวัฬ ใํิๆํฯฟ
-AboutSetupMenuItem=...ฯัศวัๅ ไีศ&
-AboutSetupTitle=ฯัศวัๅ ไีศ
-AboutSetupMessage=%2ไำฮๅ %1%n%3%n%n%1 ีÝอๅ ฮวไํ:%n%4
+ExitSetupTitle=ุฎุฑูุฌ ุงุฒ ูุตุจ
+ExitSetupMessage=.ูุตุจ ฺฉุงู…ู ูุดุฏ %n%nุขูุง ุจุฑุงุณุชู ู…ูโ€ุฎูุงููุฏ ุงุฒ ูุฑุงููุฏ ูุตุจ ุฎุงุฑุฌ ุดููุฏุ%n
+AboutSetupMenuItem=...ุฏุฑุจุงุฑู ูุตุจ&
+AboutSetupTitle=ุฏุฑุจุงุฑู ูุตุจ
+AboutSetupMessage=%1  ููุฑุงูุด  %2%n%3%n%n%1  ุตูุญู ุฎุงูฺฏู: %n%4
 AboutSetupNote=
 TranslatorNote=
 
 ; *** Buttons
-ButtonBack=< Þ&ศแํ
-ButtonNext=ศฺ&ฯํ >
-ButtonInstall=ไ&ีศ
-ButtonOK=&สวํํฯ
-ButtonCancel=แÛๆ&
-ButtonYes=ศแ&ๅ
-ButtonYesToAll=ศแๅ ศๅ &ๅใๅ
-ButtonNo=&ฮํั
-ButtonNoToAll=ไๅ ัๆํ &ๅใๅ
-ButtonFinish=&วํวไ
-ButtonBrowse=ฬำ&สฬๆ
-ButtonWizardBrowse=ฬำ&สฬๆ
-ButtonNewFolder=วํฬวฯ ๆิๅ ฬฯํฯ
+ButtonBack=< ูพู&ุดูู
+ButtonNext=ูพ&ุณูู >
+ButtonInstall=&ูุตุจ
+ButtonOK=&ุชุงููุฏ
+ButtonCancel=ุงู&ุตุฑุงู
+ButtonYes=ุข&ุฑู
+ButtonYesToAll=ุขุฑู ุจ&ู ูู…ู
+ButtonNo=&ุฎูุฑ
+ButtonNoToAll=ุฎูุฑ ุจู ู&ู…ู
+ButtonFinish=ูพ&ุงูุงู
+ButtonBrowse=&ู…ฺฉุงู
+ButtonWizardBrowse=ู…&ฺฉุงู
+ButtonNewFolder=ุณุงุฎุชู ูพูุดู ุฌุฏูุฏ
 
 ; *** "Select Language" dialog messages
-SelectLanguageTitle=าศวไ ัวๅ วไฯวา ัว วไสฮวศ ไํฯ
-SelectLanguageLabel=าศวไ ใๆัฯ วำสÝวฯๅ อํไ ไีศ ัว วไสฮวศ ไํฯ:
+SelectLanguageTitle=Select Setup Language
+SelectLanguageLabel= %n : ูุทูุงู ุฒุจุงู ูุตุจ ุฑุง ุงูุชุฎุงุจ ูู…ุงุฆูุฏ
 
 ; *** Common wizard text
-ClickNext=ัๆํ ศฺฯํ ศัวํ วฯวใๅกํว แÛๆ ศัวํ ฮัๆฬ วา ัวๅ วไฯวา แํ ไํฯ
+ClickNext=ุจุฑุงู ุงุฏุงู…ู ุฑูู ุฏฺฉู…ู ูพุณูู ฺฉููฺฉ ูู…ุงููุฏ
 BeveledLabel=
-BrowseDialogTitle=ฬำสฬๆ ศัวํ ๆิๅ
-BrowseDialogLabel=ํ ๆิๅ วา แํำส าํั วไสฮวศ ไํฯก ำำ สวํํฯ ัว แํ ไํฯ
-NewFolderName=ๆิๅ ฬฯํฯ
+BrowseDialogTitle=ู…ฺฉุงู ูุงุจู ุจุฑุงู ูพูุดู
+BrowseDialogLabel=ูฺฉ ูพูุดู ุฑุง ุงูุชุฎุงุจ ฺฉููุฏ ู ุณูพุณ ุฑูู ุฏฺฉู…ู ุชุงููุฏ ฺฉููฺฉ ูู…ุงููุฏ
+NewFolderName=ูพูุดู ุฌุฏูุฏ
 
 ; *** "Welcome" wizard page
-WelcomeLabel1=ฮๆิ ยใฯํฯ [name] ศๅ ๆําวัฯ ไีศ
-WelcomeLabel2=ัว ัๆํ ัวํวไๅ ิใว ไีศ ใํไฯ [name/ver] วํไ ศัไวใๅ%n%nสๆีํๅ ใํิๆฯกำวํั ศัไวใๅ ๅว ัว Þศแ วา วฯวใๅ ฯวฯไ ศศไฯํฯ
+WelcomeLabel1=ุฎูุด ุขู…ุฏูุฏ [name] ุจู ุจุฑูุงู…ู ูุตุจ
+WelcomeLabel2=%n.ูพูุดููุงุฏ ู…ูโ€ุดูุฏ ุชู…ุงู… ุจุฑูุงู…ูโ€ูุงูู ฺฉู ุจุงุฒ ุงุณุช ุฑุง ูุจู ูุตุจ ุจุจูุฏูุฏ%n%n%n%n
 
 ; *** "Password" wizard page
-WizardPassword=ัใาฺศๆั
-PasswordLabel1=วํไ ัวๅ วไฯวา สๆำุ ัใาฺศๆั ใอวÝูส ใํิๆฯ
-PasswordLabel3=แุÝว ัใาฺศๆั ัว ๆวัฯ ไํฯกำำ ัๆํ ศฺฯํ ศัวํ วฯวใๅ แํ ไํฯ.ัใา ฺศๆั ศๅ ๆ ๆศาั ศๆฯไ อัๆÝ อำวำ วำส
-PasswordEditLabel=ัใาฺศๆั:
-IncorrectPassword=ัใาฺศๆั ๆวัฯ ิฯๅ ีอํอ ไํำส.แุÝว ฯๆศวัๅ ำฺํ ไํฯ
+WizardPassword=ุฑู…ุฒ ุนุจูุฑ
+PasswordLabel1=ุงูู ุจุฑูุงู…ู ูุตุจ ุจุง ฺฏุฐุฑูุงฺู ู…ุญูุงุธุช ู…ูโ€ุดูุฏ
+PasswordLabel3=ุฎูุงูุดู…ูุฏ ุงุณุช ฺฏุฐุฑูุงฺู ุฑุง ูุงุฑุฏ ฺฉููุฏ ู ุณูพุณ ุฑูู ุฏฺฉู…ู ูพุณูู ฺฉููฺฉ ูู…ุงููุฏ.%nฺฏุฐุฑูุงฺูโ€ูุง ุจู ฺฉูฺฺฉ ูุง ุจุฒุฑฺฏ ุจูุฏู ุญุฑูู ุญุณุงุณ ูุณุชูุฏ
+PasswordEditLabel=&: ุฑู…ุฒ ุนุจูุฑ
+IncorrectPassword=ุฑู…ุฒ ุนุจูุฑ ูุงุฑุฏ ุดุฏู ุตุญูุญ ูู…ูโ€ุจุงุดุฏ. ุฎูุงูุดู…ูุฏ ุงุณุช ุฏูุจุงุฑู ุชูุงุด ฺฉููุฏ
 
 ; *** "License Agreement" wizard page
-WizardLicense=ใฬๆา วำสÝวฯๅ
-LicenseLabel=แุÝว วุแวฺวส ใๅใ าํั ัว Þศแ วา วฯวใๅ ฯวฯไ ศฮๆวไํฯ
-LicenseLabel3=แุÝว ใฬๆา วำสÝวฯๅ ัว ศฮๆวไํฯ.ิใว ศวํฯ ิัวํุ วํไ ใฬๆา ัว Þศแ วา วฯวใๅ ฯวฯไ ศะํัํฯ
-LicenseAccepted=สๆวÝÞไวใๅ ัว &ใํะํัใ
-LicenseNotAccepted=สๆวÝÞไวใๅ ัว &ไใํะํัใ
+WizardLicense= ุชูุงููโ€ูุงู…ู
+LicenseLabel=
+LicenseLabel3=ุดู…ุง ุจุงูุฏ ุจุง ุดุฑุงูุท ุงูู ุชูุงููโ€ูุงู…ูุ ูพูุด ุงุฒ ุงุฏุงู…ู ูุตุจุ ู…ูุงููุช ูู…ุงุฆูุฏ
+LicenseAccepted=ุชูุงููโ€ูุงู…ู ุฑุง &ู…ูโ€ูพุฐูุฑู…
+LicenseNotAccepted=&ุฎูู€ุฑ
 
 ; *** "Information" wizard pages
-WizardInfoBefore=วุแวฺวส
-InfoBeforeLabel=แุÝว วุแวฺวส ใๅใ าํั ัว Þศแ วา วฯวใๅ ฯวฯไ ศฮๆวไํฯ
-InfoBeforeClickLabel=าใวไํๅ ยใวฯๅ วฯวใๅ ไีศ ๅำสํฯก ัๆํ ศฺฯํ แํ ไํฯ
-WizardInfoAfter=วุแวฺวส
-InfoAfterLabel=แุÝว วุแวฺวส ใๅใ าํั ัว Þศแ วา วฯวใๅ ฯวฯไ ศฮๆวไํฯ
-InfoAfterClickLabel=าใวไํๅ ยใวฯๅ วฯวใๅ ไีศ ๅำสํฯก ัๆํ ศฺฯํ แํ ไํฯ
+WizardInfoBefore=ุงุทูุงุนุงุช
+InfoBeforeLabel=ุฎูุงูุดู…ูุฏ ุงุณุช ูพูุด ุงุฒ ุงุฏุงู…ู ุงุทูุงุนุงุช ู…ูู…ู ฺฉู ุฏุฑ ุฒูุฑ ู…ูโ€ุขูุฏ ุฑุง ุจุฎูุงููุฏ
+InfoBeforeClickLabel=ููฺฏุงู…ู ฺฉู ุขู…ุงุฏู ุงุฏุงู…ู ูุตุจ ุดุฏูุฏุ ุฑูู ุฏฺฉู…ู ูพุณูู ฺฉููฺฉ ูู…ุงููุฏ
+WizardInfoAfter=ุงุทูุงุนุงุช
+InfoAfterLabel=ุฎูุงูุดู…ูุฏ ุงุณุช ูพูุด ุงุฒ ุงุฏุงู…ู ุงุทูุงุนุงุช ู…ูู…ู ฺฉู ุฏุฑ ุฒูุฑ ู…ูโ€ุขูุฏ ุฑุง ุจุฎูุงููุฏ
+InfoAfterClickLabel=ููฺฏุงู…ู ฺฉู ุขู…ุงุฏู ุงุฏุงู…ู ูุตุจ ุดุฏูุฏุ ุฑูู ุฏฺฉู…ู ูพุณูู ฺฉููฺฉ ูู…ุงููุฏ
 
 ; *** "User Information" wizard page
-WizardUserInfo=วุแวฺวส วัศั
-UserInfoDesc=แุÝว วุแวฺวส ฮๆฯ ัว ๆวัฯ ไํฯ
-UserInfoName=ไวใ วัศั&:
-UserInfoOrg=ำ&วาใวไ:
-UserInfoSerial=ิใวัๅ ำัํวแ&:
-UserInfoNameRequired=ิใว ศวํฯ ํ ไวใ ๆวัฯ ไํฯ
+WizardUserInfo=ุงุทูุงุนุงุช ฺฉุงุฑุจุฑ
+UserInfoDesc=ุฎูุงูุดู…ูุฏ ุงุณุช ุงุทูุงุนุงุช ุฎูุฏ ุฑุง ูุงุฑุฏ ูู…ุงููุฏ
+UserInfoName=&: ูุงู… ฺฉุงุฑุจุฑ
+UserInfoOrg=&: ุดุฑฺฉุช
+UserInfoSerial=&: ุดู…ุงุฑู ุณุฑูุงู
+UserInfoNameRequired=ุดู…ุง ุจุงูุฏ ูฺฉ ูุงู… ูุงุฑุฏ ฺฉููุฏ
 
 ; *** "Select Destination Location" wizard page
-WizardSelectDir=ใÞีฯ ไีศ ัว วไสฮวศ ไใวํํฯ
-SelectDirDesc=ฬว ศวํฯ ไีศ ิๆฯฟ [name]
-SelectDirLabel3=ฯั ๆิๅ าํั ไีศ ฮๆวๅฯ ิฯ [name]
-SelectDirBrowseLabel=ศัวํ วฯวใๅกศฺฯํ ัว แํ ไํฯ.ศัวํ วไสฮวศ ๆิๅ ใสÝวๆสกัๆํ ฬำสฬๆ แํ ไํฯ
-DiskSpaceMBLabel=ฯำสใ ศๅ [mb] ใวศวํส Ýึวํ ฮวแํ ไํวา ฮๆวๅฯ ศๆฯ
-CannotInstallToNetworkDrive=ัวๅ วไฯวา ไใํสๆวไฯ ฯั ฯัวํๆ ิศๅ ไีศ ไฯ
-CannotInstallToUNCPath=ัวๅ วไฯวา ไใํสๆวไฯ ฯั ใำํั ํๆ ว๖ไ ำํ ไีศ ิๆฯ
-InvalidPath=ิใว ศวํฯ ํ ใำํั วใแ ๅใัวๅ อัÝ ฯัวํๆ ๆวัฯ ไํฯกศัวํ ใหวแ:%n%nC:\APP%n%nํว ํ ใำํั ํๆ วไ ำํ ฯั วํไ Þวแศ:%n%n\\server\share
-InvalidDrive=ฯัวํๆ ํว วิสัว ํๆ วไ ำํ ๅ ิใว วไสฮวศ ัฯๅ วํฯกๆฬๆฯ ไฯวัฯ ํว Þวศแ ฯำสัำํ ไํำส.แุÝว ํํ ฯํั ัว วไสฮวศ ไํฯ
-DiskSpaceWarningTitle=ศๅ วไฯวาๅ วÝํ Ýึวํ ฮวแํ ๆฬๆฯ ไฯวัฯ
-DiskSpaceWarning=อฯวÞแ ศๅ %1 ํแๆศวํส Ýึวํ ฮวแํ ศัวํ ไีศ ศัไวใๅ ไํวา วำสก ๆแํ ฯั ฯัวํๆ วไสฮวศ ิฯๅ สไๅว %2 ํแๆศวํส Þวศแ วำสÝวฯๅ วำส.%n%nศว วํไ ๆฬๆฯ ยํว ใํฮๆวๅํฯ วฯวใๅ ฯๅํฯฟ
-DirNameTooLong=ไวใ ๆิๅ ํว ใำํั ฮํแํ ศแไฯ วำส
-InvalidDirName=ไวใ ๆิๅ ีอํอ ไํำส
-BadDirName32=ไวใ ๆิๅ ๅว ไใํสๆวไฯ วัวสัๅวํ าํั ัว ฯัศั ศํัฯ:%n%n%1
-DirExistsTitle=ๆิๅ ๆฬๆฯ ฯวัฯ
-DirExists=วํไ ๆิๅ:%n%n%1%n%nวไๆไ ๆฬๆฯ ฯวัฯ. ศว วํไ ๆฬๆฯกยํว ฯั ๅใํไ ๆิๅ ไีศ ัว วฯวใๅ ฯๅํฯฟ
-DirDoesntExistTitle=ๆิๅ ๆฬๆฯ ไฯวัฯ
-DirDoesntExist=วํไ ๆิๅ:%n%n%1%n%nๆฬๆฯ ไฯวัฯ. ยํว ใํฮๆวๅํฯ วํไ ๆิๅ วํฬวฯ ิๆฯฟ
+WizardSelectDir=ู…ฺฉุงู ูุตุจ ุจุฑูุงู…ู
+SelectDirDesc=
+SelectDirLabel3=ุงูู ุจุฑูุงู…ู ุฏุฑ ูพูุดู ุฒูุฑ ูุตุจ ุฎูุงูุฏ ุดุฏ
+SelectDirBrowseLabel=ุงฺฏุฑ ู…ูโ€ุฎูุงููุฏ ูพูุดู ุฏูฺฏุฑู ุฑุง ุงูุชุฎุงุจ ฺฉููุฏุ ุฑูู ุฏฺฉู…ู ู…ฺฉุงู ฺฉููฺฉ ูู…ุงููุฏ
+DiskSpaceMBLabel=ุจุฑุงู ูุตุจ ุงูู ุจุฑูุงู…ูุ ุฏุณุชโ€ฺฉู… ุจู [mb] ู…ฺฏุงุจุงูุช ูุถุงู ุฎุงูู ููุงุฒ ุฎูุงูุฏ ุจูุฏ
+ToUNCPathname=Setup cannot install to a UNC pathname. If you are trying to install to a network, you will need to map a network drive.
+InvalidPath=ุดู…ุง ุจุงูุฏ ูฺฉ ู…ุณูุฑ ฺฉุงู…ู ุจู ูู…ุฑุงู ูุงู… ุฏุฑุงูู ุฑุง ูุงุฑุฏ ฺฉููุฏุ ุจุฑุงู ู…ุซุงู : %n%nC:\APP%n%n ูุง ุจู ุดฺฉู ู…ุณูุฑ  UNC:%n%n\\server\share
+InvalidDrive=ุงูู ุฏุฑุงูู ูุง ู…ุณูุฑู ุฑุง ฺฉู ุดู…ุง ุงูุชุฎุงุจ ูู…ูุฏูโ€ุงูุฏ ูุฌูุฏ ูุฏุงุฑุฏ ูุง ูุงุจู ุฏุณุชุฑุณู ููุณุช%nุฎูุงูุดู…ูุฏ ุงุณุช ู…ุณูุฑ ุฏูฺฏุฑู ูุงุฑุฏ ฺฉููุฏ
+DiskSpaceWarningTitle=ุจู ุงูุฏุงุฒู ฺฉุงูู ูุถุงู ุฎุงูู ูุฌูุฏ ูุฏุงุฑุฏ
+DiskSpaceWarning= %1 ฺฉูููุจุงูุช ูุถุงู ุฎุงูู ุจุฑุงู ูุตุจ ุจุฑูุงู…ู ููุงุฒ ุงุณุชุ ููู ุฏุฑ ุฏุฑุงูู ุงูุชุฎุงุจ ุดุฏู ุชููุง  %2  ฺฉูููุจุงูุช ูุงุจู ุงุณุชูุงุฏู ุงุณุช%n%nุจุง ุงูู ูุฌูุฏ ุขูุง ู…ูโ€ุฎูุงููุฏ ุงุฏุงู…ู ุฏููุฏุ
+DirNameTooLong=ูุงู… ูพูุดู ูุง ู…ุณูุฑ ุฎููู ุทููุงูู ุงุณุช
+InvalidDirName=ูุงู… ูพูุดู ุบูุฑ ู…ุนุชุจุฑ ุงุณุช
+BadDirName32=: ูุงู… ูพูุดูโ€ูุง ูู…ูโ€ุชูุงูุฏ ฺฉุงุฑุงฺฉุชุฑูุงู ุฒูุฑ ุฑุง ุฏุฑุจุฑ ุจฺฏูุฑุฏ %n%n%1
+DirExistsTitle=ูพูุดู ูุฌูุฏ ุฏุงุฑุฏ
+DirExists=: ูพูุดูโ€ %n%n%1%n%nุฏุฑ ุญุงู ุญุงุถุฑ ูุฌูุฏ ุฏุงุฑุฏ. ุจุง ุงูู ูุฌูุฏ ุขูุง ู…ูโ€ุฎูุงููุฏ ุฏุฑ ูู…ูู ูพูุดู ูุตุจ ุฑุง ุงุฏุงู…ู ุฏููุฏุ
+DirDoesntExistTitle=ูพูุดู ูุฌูุฏ ูุฏุงุฑุฏ
+DirDoesntExist=: ูพูุดูโ€ %n%n%1%n%nูุฌูุฏ ูุฏุงุฑุฏ. ุขูุง ู…ูโ€ุฎูุงููุฏ ุงูู ูพูุดู ุฏุฑุณุช ุดูุฏุ
 
 ; *** "Select Components" wizard page
-WizardSelectComponents=วไสฮวศ วฬาวม
-SelectComponentsDesc=ฯวใ ํ วา วฬาวํ าํั ศวํฯ ไีศ ิๆไฯฟ
-SelectComponentsLabel2=วฬาวํํ ๅ ใํฮๆวๅํฯ ไีศ ิๆฯ ัว วไสฮวศก ยไฯำสๅ วา วฬาวํ ศัไวใๅ ัว ๅ ไใํฮๆวๅํฯ ไีศ ิๆฯก วา อวแส วไสฮวศ ฯัยๆัํฯ. าใวไํๅ ยใวฯๅ ิฯํฯกศฺฯํ ัว แํ ไํฯ
-FullInstallation=ไีศ วใแ
+WizardSelectComponents=ุงูุชุฎุงุจ ุงุฌุฒุง
+SelectComponentsDesc=ฺฉุฏุงู… ูฺฉ ุงุฒ ุงุฌุฒุงู ุฒูุฑ ุจุงูุฏ ูุตุจ ุดููุฏุ
+SelectComponentsLabel2=ุงุฌุฒุงูู ฺฉู ู…ูโ€ุฎูุงููุฏ ูุตุจ ุดูุฏ ุฑุง ุงูุชุฎุงุจ ฺฉููุฏ %nุขูโ€ุฏุณุชู ุงุฒ ุงุฌุฒุงู ุจุฑูุงู…ู ุฑุง ฺฉู ุชู…ุงูู ูุฏุงุฑูุฏ ูุตุจ ุดูุฏุ ุงุฒ ุญุงูุช ุงูุชุฎุงุจ ุฏุฑุขูุฑูุฏ %nููฺฏุงู…ู ฺฉู ุขู…ุงุฏูโ€ู ุงุฏุงู…ู ุจูุฏูุฏุ ุฑูู ุฏฺฉู…ู ูพุณูู ฺฉููฺฉ ูู…ุงููุฏ
+FullInstallation=ูุตุจ ฺฉุงู…ู
 ; if possible don't translate 'Compact' as 'Minimal' (I mean 'Minimal' in your language)
-CompactInstallation=ไีศ Ýิัฯๅ
-CustomInstallation=ไีศ ำÝวัิํ
-NoUninstallWarningTitle=วฬาว ๆฬๆฯ ฯวัไฯ
-NoUninstallWarning=ัวๅ วไฯวา สิฮํี ฯวฯๅ ๅ วไๆไ วฬาวํ าํั ฯั ัวํวไๅ ิใว ไีศ ิฯๅวไฯ:%n%n%1%n%nฺฯใ วไสฮวศ วํไ วฬาว ยไๅว ัว อะÝ ไฮๆวๅฯ ัฯ.%n%nศว วํไ ๆฬๆฯ ยํว ใํฮๆวๅํฯ วฯวใๅ ฯๅํฯฟ
-ComponentSize1=%1 ํแๆศวํส
-ComponentSize2=%1 ใวศวํส
-ComponentsDiskSpaceMBLabel=วไสฮวศ ฬวัํก ฯำสใ ศๅ [mb] ใวศวํส Ýึวํ ฮวแํ ฯั ฯํำ ไํวา ฯวัฯ
+CompactInstallation=ูุตุจ ูุดุฑุฏู
+CustomInstallation=ูุตุจ ุณูุงุฑุดู
+NoUninstallWarningTitle=ุงุฌุฒุง ูุฌูุฏ ุฏุงุฑูุฏ
+NoUninstallWarning=: ุชุดุฎูุต ุฏุงุฏู ุดุฏ ฺฉู ุฏุฑ ุญุงู ุญุงุถุฑ ุงุฌุฒุงู ุฒูุฑ ุฏุฑ ุฑุงูุงูู ุดู…ุง ูุตุจ ุดุฏูโ€ุงูุฏ %n%n%1%n%n ุนุฏู… ุงูุชุฎุงุจ ุงูู ุงุฌุฒุง ุขููุง ุฑุง ุญุฐู ูุฎูุงูุฏ ฺฉุฑุฏ %n%n ุจุง ุงูู ูุฌูุฏ ุขูุง ู…ูโ€ุฎูุงููุฏ ุงุฏุงู…ู ุฏููุฏุ
+ComponentSize1=%1 ฺฉูููุจุงูุช
+ComponentSize2=%1 ู…ฺฏุงุจุงูุช
+ComponentsDiskSpaceMBLabel=ุงูุชุฎุงุจ ุฌุงุฑูุ ุฏุณุชโ€ฺฉู… ุจู [mb] ู…ฺฏุงุจุงูุช ูุถุงู ุฎุงูู ุฏุฑ ุฏูุณฺฉ ููุงุฒ ุฏุงุฑุฏ
 
 ; *** "Select Additional Tasks" wizard page
-WizardSelectTasks=วไสฮวศ ๆูวํÝ วึวÝํ
-SelectTasksDesc=ฯวใ ํ วา ๆูวํÝ วึวÝํ ศวํฯ วไฬวใ ิๆฯฟ
-SelectTasksLabel2=ัว วไสฮวศกำำ ัๆํ ศฺฯํ แํ ไํฯ [name] ๆูวํÝ วึวÝํกอํไ ไีศ
+WizardSelectTasks=ุงูุชุฎุงุจ ุงู…ูุฑ ุชฺฉู…ููู
+SelectTasksDesc=
+SelectTasksLabel2=%n: ู…ูุงุฑุฏู ฺฉู ู…ูโ€ุฎูุงููุฏ ุฏุฑ ุฌุฑูุงู ูุตุจ ุงูู ุจุฑูุงู…ู ุงูุฌุงู… ุดููุฏ ุฑุง ุงูุชุฎุงุจ ูู…ุงุฆูุฏ%n
 
 ; *** "Select Start Menu Folder" wizard page
-WizardSelectProgramGroup=วไสฮวศ ๆิๅ วำสวัส ใไๆ
-SelectStartMenuFolderDesc=ใํวไศัๅวํ ศัไวใๅ ฬว ศวํฯ Þัวั ํัไฯฟ
-SelectStartMenuFolderLabel3=ัวๅ วไฯวากใํวไศั ัว ฯั ๆิๅ วำสวัส ใไๆํ าํั วํฬวฯ ใํไฯ
-SelectStartMenuFolderBrowseLabel=ศัวํ วฯวใๅกศฺฯํ ัว แํ ไํฯ.ศัวํ วไสฮวศ ๆิๅ ใสÝวๆสกัๆํ ฬำสฬๆ แํ ไํฯ
-MustEnterGroupName=ิใว ศวํฯ ไวใ ๆิๅ ัว ๆวัฯ ไํฯ
-GroupNameTooLong=ไวใ ๆิๅ ํว ใำํั ฮํแํ ศแไฯ วำส
-InvalidGroupName=ไวใ ๆิๅ ีอํอ ไํำส
-BadGroupName=ไวใ ๆิๅ ไใํสๆวไฯ วัวสัๅวํ าํั ัว ิวใแ ิๆฯ:%n%n%1
-NoProgramGroupCheck2=ๆิๅ วำสวัส ใไๆ ัว วํฬวฯ ไไ
+WizardSelectProgramGroup=ู…ูุงูุจุฑูุงู ุจุฑูุงู…ู ุฏุฑ ู…ููู ุดุฑูุน ูููุฏูุฒ
+SelectStartMenuFolderDesc=
+SelectStartMenuFolderLabel3=
+SelectStartMenuFolderBrowseLabel=ุงฺฏุฑ ู…ูโ€ุฎูุงููุฏ ูพูุดูโ€ ุฏูฺฏุฑู ุฑุง ุงูุชุฎุงุจ ฺฉููุฏุ ุฑูู ุฏฺฉู…ู ู…ฺฉุงู ฺฉููฺฉ ฺฉููุฏ
+MustEnterGroupName=ุจุงูุฏ ูุงู… ูฺฉ ูพูุดู ุฑุง ูุงุฑุฏ ฺฉููุฏ
+GroupNameTooLong=ูุงู… ูพูุดู ูุง ู…ุณูุฑ ุฎููู ุทููุงูู ุงุณุช
+InvalidGroupName=ูุงู… ูพูุดู ุบูุฑ ู…ุนุชุจุฑ ุงุณุช
+BadGroupName=: ูุงู… ูพูุดู ูู…ูโ€ุชูุงูุฏ ฺฉุงุฑุงฺฉุชุฑูุงู ุฒูุฑ ุฑุง ุฏุฑุจุฑ ุจฺฏูุฑุฏ %n%n%1
+NoProgramGroupCheck2=&ูพูุดูโ€ุงู ุฑุง ุฏุฑ ู…ููู ุดุฑูุน ูููุฏูุฒ ุฏุฑุณุช ูฺฉู
 
 ; *** "Ready to Install" wizard page
-WizardReady=ยใวฯๅ ศัวํ ไีศ
-ReadyLabel1=ัๆํ ัวํวไๅ ิใว ใํศวิฯ [name] ัวๅ วไฯวาก ยใวฯๅ ไีศ
-ReadyLabel2a=ัๆํ ไีศ ศัวํ วฯวใๅ ไีศ ศัไวใๅ กํว ัๆํ Þศแํ ศัวํ ศวาศํไํ ํว สÛํํั สไูํใวส แํ ไํฯ
-ReadyLabel2b=ัๆํ ไีศกศัวํ วฯวใๅ ไีศ ศัไวใๅ แํ ไํฯ
-ReadyMemoUserInfo=วุแวฺวส วัศั:
-ReadyMemoDir=ใวไ ใÞีฯ:
-ReadyMemoType=ไๆฺ ไีศ:
-ReadyMemoComponents=วฬาวํ วไสฮวศ ิฯๅ:
-ReadyMemoGroup=ๆิๅ วำสวัส ใไๆ:
-ReadyMemoTasks=ๆูวํÝ วึวÝํ:
+WizardReady=ุดุฑูุน ูุตุจ
+ReadyLabel1=
+ReadyLabel2a=.ุจุฑุงู ุดุฑูุนุ ุฑูู ุฏฺฉู…ู ูุตุจ ฺฉููฺฉ ูู…ุงููุฏ%n%n.ุงฺฏุฑ ู…ูโ€ุฎูุงููุฏ ุชูุธูู…ุงุช ุฑุง ุจุงุฒุจููู ูุง ุชุบููุฑ ุฏููุฏุ ุฑูู ุฏฺฉู…ู ูพูุดูู ฺฉููฺฉ ูู…ุงููุฏ%n
+ReadyLabel2b=ุฑูู ุฏฺฉู…ู ูุตุจ ฺฉููฺฉ ูู…ุงููุฏ ุชุง ุฑููุฏ ูุตุจ ุงุฏุงู…ู ูุงุจุฏ
+ReadyMemoUserInfo=: ุงุทูุงุนุงุช ฺฉุงุฑุจุฑ
+ReadyMemoDir=: ู…ฺฉุงู ูุตุจ ุจุฑูุงู…ู
+ReadyMemoType=: ููุน ูุตุจ
+ReadyMemoComponents=: ุงุฌุฒุงู ุงูุชุฎุงุจ ุดุฏู
+ReadyMemoGroup=: Start ูพูุดูโ€ู ู…ููู
+ReadyMemoTasks=: ุงู…ูุฑ ุชฺฉู…ููู
 
 ; *** "Preparing to Install" wizard page
-WizardPreparing=ยใวฯๅ ำวาํ ศัวํ ไีศ
-PreparingDesc=ัๆํ ัวํวไๅ วำส [name] ศัไวใๅ ยใวฯๅ ไีศ
-PreviousInstallNotCompleted=Ýัวํไฯ ไีศกอะÝ ศัไวใๅ Þศแํ วใแ ไิฯๅกิใว ไํวา ศๅ ัํำสวัส ศัวํ วใแ ิฯไ Ýัวํไฯ ฯวัํฯ%n%nศฺฯ วา ัํำสวัส ัวํวไๅกฯๆศวัๅ ัวๅ วไฯวา [name] ศัวํ วใแ ิฯไ ไีศ วฬัว ไํฯ
-CannotContinue=ไีศ ัว ไใํ สๆวไ วฯวใๅ ฯวฯกศัวํ ฮัๆฬ ัๆํ แÛๆ แํ ไํฯ
-ApplicationsFound=ศัไวใๅ ๅวํ าํั วา Ýวํแ ๅวํํ ๅ ไํวา ศๅ ศัๆาัำวไํ สๆำุ ศัไวใๅ ัว ฯวัไฯ วำสÝวฯๅ ใํไไฯ.สๆีํๅ ใํิๆฯ วฬวาๅ ฯๅํฯ ศัไวใๅ ฮๆฯวั ยไ ศัไวใๅ ๅว ัว ศศไฯฯ
-ApplicationsFound2=ศัไวใๅ ๅวํ าํั วา Ýวํแ ๅวํํ ๅ ไํวา ศๅ ศัๆาัำวไํ สๆำุ ัวๅ วไฯวา ัว ฯวัไฯ วำสÝวฯๅ ใํไไฯ.สๆีํๅ ใํิๆฯ วฬวาๅ ฯๅํฯ ัวๅ วไฯวา ฮๆฯวั ยไ ศัไวใๅ ๅว ัว ศศไฯฯ.ศฺฯ วา วใแ ิฯไ ไีศกัวๅ วไฯวา ยไ ศัไวใๅ ๅว ัว ัํำสวัส ฮๆวๅฯ ัฯ.
-CloseApplications=&ศำสไ ฮๆฯวั ศัไวใๅ ๅว
-DontCloseApplications=&ศัไวใๅ ๅว ัว ไศไฯ
-ErrorCloseApplications=ัวๅ วไฯวาๅ Þวฯั ศๅ ศำสไ ฮๆฯวั ๅใๅ ศัไวใๅ ๅว ไํำส.สๆีํๅ ใํิๆฯ ิใว ๅใๅ ศัไวใๅ ๅวํํ ัว ๅ Ýวํแ ๅวํ ยไ ศวํฯ ศัๆาัำวไํ ิๆไฯ Þศแ วา วฯวใๅ ไีศ ศศไฯํฯ
+WizardPreparing=ุฏุฑ ุญุงู ุขู…ุงุฏู ุดุฏู ุจุฑุงู ูุตุจ
+PreparingDesc=ุขู…ุงุฏู ูุตุจ ุฑูู ุฑุงูุงูู ุดู…ุง ู…ูโ€ุจุงุดุฏ [name] 
+PreviousInstallNotCompleted=ูุฑุขููุฏ ูุตุจ/ุญุฐู ุจุฑูุงู…ูโ€ู ูุจูู ฺฉุงู…ู ูุดุฏู ุงุณุช. ุจุฑุงู ฺฉุงู…ู ฺฉุฑุฏู ูุตุจ ุจุงูุฏ ุณูุณุชู… ุฎูุฏ ุฑุง ู…ุฌุฏุฏุงู ุฑุงู ุงูุฏุงุฒู ฺฉููุฏ%n%nูพุณ ุงุฒ ุฑุงู ุงูุฏุงุฒู ู…ุฌุฏุฏ ุฑุงูุงููโ€ู ุดู…ุงุ ูุตุจ ุฑุง ุฏูุจุงุฑู ุงุฌุฑุง ฺฉููุฏ ุชุง ูุตุจ ุงูู ุจุฑูุงู…ู ฺฉุงู…ู ุดูุฏ
+CannotContinue=ูุตุจ ูู…ูโ€ุชูุงูุฏ ุงุฏุงู…ู ูพูุฏุง ฺฉูุฏ. ุจุฑุงู ุฎุฑูุฌ ุงูุตุฑุงู ุฑุง ุจูุดุงุฑูุฏ
 
 ; *** "Installing" wizard page
-WizardInstalling=ฯั อวแ ไีศ
-InstallingLabel=ัๆํ ัวํวไๅกใไสูั ศใวไํฯ [name] แุÝว สว าใวไ ไีศ
+WizardInstalling=ุฏุฑ ุญุงู ูุตุจ
+InstallingLabel=ุฎูุงูุดู…ูุฏ ุงุณุช ุตุจุฑ ูู…ุงููุฏ ุชุง ุงูู ุจุฑูุงู…ู ุจุทูุฑ ฺฉุงู…ู ุฏุฑ ุฑุงูุงูู ุดู…ุง ูุตุจ ฺฏุฑุฏุฏ
 
 ; *** "Setup Completed" wizard page
-FinishedHeadingLabel=วใแ ิฯ [name] ๆําวัฯ ไีศ
-FinishedLabelNoIcons=ฯั ัวํวไๅ ิใว ศๅ วํวไ ัำํฯๅ วำส [name] ไีศ
-FinishedLabel=ศว ใๆÝÞํส วไฬวใ ิฯ [name] ไีศ
-ClickFinish=ศัวํ ฮัๆฬ วา ัวๅ วไฯวา วํวไ ัว แํ ไํฯ
-FinishedRestartLabel=ัวํวไๅ ศวํฯ ัํำสวัส ิๆฯ.อวแว สใวํแ ศๅ ัํำสวัส ฯวัํฯฟ [name] ศัวํ วใแ ัฯไ ไีศ
-FinishedRestartMessage=ัวํวไๅ ศวํฯ ัํำสวัส ิๆฯ [name] ศัวํ วใแ ัฯไ ไีศ%n%nอวแว สใวํแ ศๅ ัํำสวัส ฯวัํฯฟ
-ShowReadmeCheck=ศแๅก ใไ Ýวํแ ซใัว ศฮๆวไป ัว ใํฮๆวไใ
-YesRadio=ศแๅกอวแว ัวํวไๅ ัว ัํำสวัส ไ
-NoRadio=ฮํักศฺฯว ัวํวไๅ ัว ัํำสวัส ใํไใ
+FinishedHeadingLabel=ฺฉุงู…ู ุดุฏ [name] ูุตุจ
+FinishedLabelNoIcons=ุฏุฑ ุฑุงูุงูู ุดู…ุง ุจู ุงุชู…ุงู… ุฑุณูุฏู ุงุณุช [name] ูุตุจ ุจุฑูุงู…ู
+FinishedLabel=.ุจุฑูุงู…ู ุจุง ู…ููููุช ูุตุจ ุดุฏ%n
+ClickFinish=.ุจุฑุงู ุฎุฑูุฌ ุงุฒ ูุตุจ ุฑูู ุฏฺฉู…ู ูพุงูุงู ฺฉููฺฉ ูู…ุงููุฏ%n%n
+FinishedRestartLabel=ุจุฑุงู ุงุชู…ุงู… ูุตุจ ุงูู ุจุฑูุงู…ูุ ุจุงูุฏ ุณูุณุชู… ุดู…ุง ู…ุฌุฏุฏุงู ุฑุงูโ€ุงูุฏุงุฒู ุดูุฏ %nุขูุง ู…ูโ€ุฎูุงููุฏ ูู…โ€ุงฺฉููู ุณูุณุชู… ุฎูุฏ ุฑุง ุงุฒ ูู ุฑุงูโ€ุงูุฏุงุฒู ฺฉููุฏุ
+FinishedRestartMessage=ุจุฑุงู ุงุชู…ุงู… ูุตุจ ุงูู ุจุฑูุงู…ูุ ุจุงูุฏ ุณูุณุชู… ุดู…ุง ู…ุฌุฏุฏุงู ุฑุงูโ€ุงูุฏุงุฒู ุดูุฏ %nุขูุง ู…ูโ€ุฎูุงููุฏ ูู…โ€ุงฺฉููู ุณูุณุชู… ุฎูุฏ ุฑุง ุงุฒ ูู ุฑุงูโ€ุงูุฏุงุฒู ฺฉููุฏุ
+ShowReadmeCheck=ุจููุ ู…ูโ€ุฎูุงูู… ูุงูู ยซู…ุฑุง ุจุฎูุงูยป ุฑุง ุจุฎูุงูู…
+YesRadio=ุจููุ ู…ูุงููู…
+NoRadio=ุฎูุฑุ ุจุนุฏุงู
 ; used for example as 'Run MyProg.exe'
-RunEntryExec=%1 วฬัวํ
-; used for example as 'View Readme.txt'
-RunEntryShellExec=%1 ใิวๅฯๅ
+RunEntryExec= ุงุฌุฑุงู   %1
+RunEntryShellExec= ู…ุดุงูุฏูโ€ู   %1
 
 ; *** "Setup Needs the Next Disk" stuff
-ChangeDiskTitle=ัวๅ วไฯวา ศๅ ฯํำ ศฺฯํ วอสํวฬ ฯวัฯ
-SelectDiskLabel2=ัว Þัวั ฯวฯๅ ๆ ัๆํ สวํํฯ แํ ไํฯ %1 แุÝว ฯํำ%n%nวั Ýวํแๅวํ ฯัๆไ วํไ ฯํำ ๆิๅํ ฯํัํ Ûํั วา วํไๅ ฯั าํั ไใวํิ ฯวฯๅก ํฯว ใํิๆไฯก ใำํั ฯัำส ัว ๆวัฯ ไํฯ ํว ใวไ ฯํั ัว วไสฮวศ ไํฯ
-PathLabel=&ใำํั:
-FileNotInDir2=Ýวํแ "%1" ไใํสๆวไฯ ฯั "%2" ํฯว ิๆฯ. แุÝว ฯํำ ฯัำส ัว Þัวั ฯๅํฯ ํว ๆิๅํ ฯํัํ ัว วไสฮวศ ไํฯ
-SelectDirectoryLabel=แุÝว ใำํั ฯํำ ศฺฯํ ัว ใิฮี ไํฯ
+ChangeDiskTitle=ูุตุจ ุจู ุฏูุณฺฉ ุจุนุฏู ุงุญุชูุงุฌ ุฏุงุฑุฏ
+SelectDiskLabel2=ุฎูุงูุดู…ูุฏ ุงุณุช ุฏูุณฺฉ   %1   ุฑุง ูุฑุงุฑ ุฏููุฏ ู ุฑูู ุฏฺฉู…ู ุชุงููุฏ ฺฉููฺฉ ูู…ุงููุฏ %n%n ุงฺฏุฑ ูุงููโ€ูุงู ุฏุฑูู ุงูู ุฏูุณฺฉ ูพูุดูโ€ู ุฏูฺฏุฑู ุบูุฑ ุงุฒ ุงููฺฉู ุฏุฑ ุฒูุฑ ูู…ุงูุด ุฏุงุฏูุ ูพูุฏุง ู…ูโ€ุดููุฏุ ู…ุณูุฑ ุฏุฑุณุช ุฑุง ูุงุฑุฏ ฺฉููุฏ ูุง ู…ฺฉุงู ุฏูฺฏุฑ ุฑุง ุจูุดุงุฑูุฏ
+PathLabel=&: ู…ุณูุฑ
+FileNotInDir2=ูุงูู  "%1"  ูู…ูโ€ุชูุงูุฏ ุฏุฑ  "%2"  ูพูุฏุง ุดูุฏ %nุฎูุงูุดู…ูุฏ ุงุณุช ุฏูุณฺฉ ุฏุฑุณุช ุฑุง ูุฑุงุฑ ุฏููุฏ ูุง ูพูุดูโ€ู ุฏูฺฏุฑู ุฑุง ุงูุชุฎุงุจ ฺฉููุฏ
+SelectDirectoryLabel=ุฎูุงูุดู…ูุฏ ุงุณุช ู…ุณูุฑ ุฏูุณฺฉ ุจุนุฏู ุฑุง ู…ุดุฎุต ูู…ุงููุฏ
 
 ; *** Installation phase messages
-SetupAborted=ไีศ วใแ ไิฯ%n%nแุÝว ไำศส ศๅ ัÝฺ ใิแ วÞฯวใ ๆ ัวๅ วไฯวา ัว ฯๆศวัๅ วฬัว ไใวํํฯ
-EntryAbortRetryIgnore=ัๆํ สฬฯํฯไูั ศัวํ ำฺํ ฯๆศวัๅก ิใๆิํ ศัวํ วฯวใๅ ฯัๅั ีๆัสก ํว แÛๆ ศัวํ ฮัๆฬ วา ไีศ แํ ไํฯ
+SetupAborted=ูุตุจ ฺฉุงู…ู ูุดุฏ.%n%nุฎูุงูุดู…ูุฏ ุงุณุช ูุณุจุช ุจู ุฑูุน ู…ุดฺฉู ุงูุฏุงู… ู ูุตุจ ุฑุง ุฏูุจุงุฑู ุงุฌุฑุง ูู…ุงููุฏ.
+;EntryAbortRetryIgnore=ุฎูุงูุดู…ูุฏ ุงุณุช ุจุฑุงู ุชูุงุดู ุฏูุจุงุฑูุ ุงุฏุงู…ู ฺฉุงุฑ ู ูุง ุจุฑุงู ูุบู ฺฉุฑุฏู ูุตุจ ุงูุฏุงู… ูู…ุงููุฏ
+EntryAbortRetryIgnore=Click Retry to try again, Ignore to proceed anyway, or Abort to cancel installation.
 
 ; *** Installation status messages
-StatusClosingApplications=...ศำสไ ศัไวใๅ ๅว
-StatusCreateDirs=...วํฬวฯ ๆิๅ ๅว
-StatusExtractFiles=...วำสฮัวฬ Ýวํแ ๅว
-StatusCreateIcons=...วํฬวฯ ใํวไศัๅว
-StatusCreateIniEntries=...INI วํฬวฯ ๆัๆฯํ
-StatusCreateRegistryEntries=..วํฬวฯ ๆัๆฯํ ัํฬำสัํ
-StatusRegisterFiles=...หศส Ýวํแๅว
-StatusSavingUninstall=...ะฮํัๅ วุแวฺวส อะÝ ศัไวใๅ
-StatusRunProgram=...ฯั อวแ วสใวใ ไีศ
-StatusRestartingApplications=...ัํำสวัส ศัไวใๅ ๅว
-StatusRollback=...ฯั อวแ ศวาัฯวไฯไ สÛํํัวส
+StatusCreateDirs=...ุฏุฑ ุญุงู ุณุงุฎุชู ูพูุดูโ€ูุง
+StatusExtractFiles=...ุฏุฑ ุญุงู ุงุณุชุฎุฑุงุฌ ูุงููโ€ูุง
+StatusCreateIcons=...ุฏุฑ ุญุงู ุณุงุฎุชู ู…ูุงูุจุฑูุง
+StatusCreateIniEntries=INI... ุฏุฑ ุญุงู ุณุงุฎุชู ู…ุญุชููุงุช 
+StatusCreateRegistryEntries=...ุฏุฑ ุญุงู ุณุงุฎุชู ู…ุญุชููุงุช ุจุงูฺฏุงูู(ุฑุฌูุณุชุฑู)
+StatusRegisterFiles=...ุฏุฑ ุญุงู ุซุจุช ูุงููโ€ูุง
+StatusSavingUninstall=...ุฏุฑ ุญุงู ุฐุฎูุฑู ุงุทูุงุนุงุช ุญุฐู ุจุฑูุงู…ู
+StatusRunProgram=...ุฏุฑ ุญุงู ุงุชู…ุงู… ูุตุจ
+StatusRollback=...ุฏุฑ ุญุงู ุจุงุฒฺฏุฑุฏุงูุฏู ุชุบููุฑุงุช
 
 ; *** Misc. errors
-ErrorInternal2=ฮุวํ ฯวฮแํ: %1
-ErrorFunctionFailedNoCode=%1 ใๆÝÞ ไิฯ
-ErrorFunctionFailed=%1ใๆÝÞ ไิฯก ฯ %2
-ErrorFunctionFailedWithMessage=%1ใๆÝÞ ไิฯก ฯ %2.%n%3
-ErrorExecutingProgram=Þวฯั ศๅ วฬัวํ Ýวํแ ไํำส:%n%1
+ErrorInternal2= ู…ุดฺฉู ุฏุงุฎูู   %1
+ErrorFunctionFailedNoCode=%1  ูุงู…ููู ุจูุฏ
+ErrorFunctionFailed=%1  ูุงู…ููู ุจูุฏ %nฺฉุฏ   %2
+ErrorFunctionFailedWithMessage=%1  ูุงู…ููู ุจูุฏ %nฺฉุฏ ู…ูุฑุฏ ูุธุฑ   %2%n%3
+ErrorExecutingProgram= ุนุฏู… ุชูุงูุงูู ุฏุฑ ุงุฌุฑุงู ูุงูู   %n%1
 
 ; *** Registry errors
-ErrorRegOpenKey=ฮุวํ ศวาัฯไ แํฯ ัํฬำสัํ:%n%1\%2
-ErrorRegCreateKey=ฮุวํ วํฬวฯ แํฯ ัํฬำสัํ:%n%1\%2
-ErrorRegWriteKey=ฮุวํ ไๆิสไ แํฯ ัํฬำสัํ:%n%1\%2
+ErrorRegOpenKey=ุฎุทุง ุฏุฑ ููฺฏุงู… ุจุงุฒฺฉุฑุฏู ฺฉููุฏ ุจุงูฺฏุงูู (ุฑุฌูุณุชุฑู): %n%1\%2
+ErrorRegCreateKey=ุฎุทุง ุฏุฑ ููฺฏุงู… ุณุงุฎุชู ฺฉููุฏ ุจุงูฺฏุงูู (ุฑุฌูุณุชุฑู): %n%1\%2
+ErrorRegWriteKey=ุฎุทุง ุฏุฑ ููฺฏุงู… ููุดุชู ฺฉููุฏ ุจุงูฺฏุงูู (ุฑุฌูุณุชุฑู): %n%1\%2
 
 ; *** INI errors
-ErrorIniEntry="ฮุวํ วํฬวฯ ๆัๆฯํ วํไํ ฯั Ýวํแ "%1
+ErrorIniEntry=ุฎุทุง ุฏุฑ ููฺฏุงู… ุณุงุฎุชู ู…ุญุชูุงู  INI  ุฏุฑ ูุงูู ู…ูุฑุฏ ูุธุฑ  "%1"
 
 ; *** File copying errors
-FileAbortRetryIgnore=ัๆํ สฬฯํฯไูั ศัวํ ำฺํ ฯๆศวัๅก ิใๆิํ ศัวํ ัฯ วํไ Ýวํแ(สๆีํๅ ไใํิๆฯ)ก ํว แÛๆ ศัวํ ฮัๆฬ วา ไีศ แํ ไํฯ
-FileAbortRetryIgnore2=ัๆํ สฬฯํฯไูั ศัวํ ำฺํ ฯๆศวัๅก ิใๆิํ ศัวํ วฯวใๅ ฯัๅั ีๆัส(สๆีํๅ ไใํิๆฯ)ก ํว แÛๆ ศัวํ ฮัๆฬ วา ไีศ แํ ไํฯ
-SourceIsCorrupted=Ýวํแ ใไศฺ ฮัวศ วำส
-SourceDoesntExist=ๆฬๆฯ ไฯวัฯ "%1" Ýวํแ ใไศฺ
-ExistingFileReadOnly=Ýวํแ ใๆฬๆฯ ศๅ ฺไๆวไ Ýวํแ ÝÞุ ฮๆวไฯไํ ไิวไๅ ิฯๅ วำส%n%nัๆํ สฬฯํฯไูั ศัวํ อะÝ ีÝส ÝÞุ ฮๆวไฯไํ ๆ ำฺํ ฯๆศวัๅกิใๆิํ ศัวํ ัฯ วํไ Ýวํแก ํว แÛๆ ศัวํ ฮัๆฬ วา ไีศ แํ ไํฯ
-ErrorReadingExistingDest=ํ ฮุว ฯั อํไ ฮๆวไฯไ Ýวํแ ใๆฬๆฯ ัฮ ฯวฯ:
-FileExists=Ýวํแ ฯั อวแ อวึั ๆฬๆฯ ฯวัฯ%n%nใํฮๆวๅํฯ วํไ Ýวํแ ฬวําํไ ิๆฯฟ
-ExistingFileNewer=Ýวํแ ใๆฬๆฯ ฬฯํฯสั วา Ýวํแํ วำส ๅ ฯั ไีศ ศัไวใๅ ๆฬๆฯ ฯวัฯ. สๆีํๅ ใํิๆฯ ๅ Ýวํแ ใๆฬๆฯ ัว ไๅ ฯวัํฯ.%n%nยํว ใํฮๆวๅํฯ ๅ วํไ Ýวํแ ใๆฬๆฯ ัว ไๅ ฯวัํฯฟ
-ErrorChangingAttr=ํ ฮุว อํไ ำฺํ ศัวํ สÛํํั ีÝวส Ýวํแ ใๆฬๆฯ ัฮ ฯวฯ:
-ErrorCreatingTemp=ํ ฮุว อํไ ำฺํ ศัวํ ำวฮสไ ํ Ýวํแ ฯั ๆิๅ ใÞีฯ ัฮ ฯวฯ:
-ErrorReadingSource=ํ ฮุว อํไ ำฺํ ศัวํ ฮๆวไฯไ Ýวํแ ใไศฺ ัฮ ฯวฯ:
-ErrorCopying=ํ ฮุว อํไ ำฺํ ศัวํ ํ ํ Ýวํแ ัฮ ฯวฯ:
-ErrorReplacingExistingFile=ํ ฮุว อํไ ำฺํ ศัวํ ฬวําํไํ Ýวํแ ใๆฬๆฯ ัฮ ฯวฯ:
-ErrorRestartReplace=ใๆÝÞ ศๅ ฬวําํไํ ศฺฯ วา ัํำสวัส ไิฯ:
-ErrorRenamingTemp=ํ ฮุว ฯั อํไ ำฺํ ศัวํ สÛํํั ไวใ ํ Ýวํแ ฯั ๆิๅ ใÞีฯ ัฮ ฯวฯ:
-ErrorRegisterServer=ไวสๆวไ ฯั หศส ฯํ วแ วแ/วๆ ำํ วํำ: %1
-ErrorRegSvr32Failed=%1 ัํฬำสัำัๆั ำํ ๆ ฯๆ ใๆÝÞ ไิฯ ศว ฯ ฮัๆฬ
-ErrorRegisterTypeLib=ไวสๆวไํ ฯั หศส ไๆฺ สวศฮวไๅ: %1
+;FileAbortRetryIgnore=ุฎูุงูุดู…ูุฏ ุงุณุช ุจุฑุงู ุชูุงุดู ุฏูุจุงุฑูุ ุจุฑุงู ุงุฏุงู…ู ฺฉุงุฑ (ุชูุตูู ูู…ูโ€ุดูุฏ) ู ูุง ุจุฑุงู ูุบู ฺฉุฑุฏู ูุตุจ ุงูุฏุงู… ฺฉููุฏ
+;FileAbortRetryIgnore2=ุฎูุงูุดู…ูุฏ ุงุณุช ุจุฑุงู ุชูุงุดู ุฏูุจุงุฑูุ ุจุฑุงู ุงุฏุงู…ู ฺฉุงุฑ (ุชูุตูู ูู…ูโ€ุดูุฏ) ู ูุง ุจุฑุงู ูุบู ฺฉุฑุฏู ูุตุจ ุงูุฏุงู… ฺฉููุฏ
+FileAbortRetryIgnore=Click Retry to try again, Ignore to skip this file (not recommended), or Abort to cancel installation.
+FileAbortRetryIgnore2=Click Retry to try again, Ignore to proceed anyway (not recommended), or Abort to cancel installation.
+SourceIsCorrupted=ูุงูู ู…ูุจุน ุฎุฑุงุจ ุดุฏู ุจูุฏ
+SourceDoesntExist=ูุฌูุฏ ูุฏุงุดุชู ูุงูู ู…ูุจุน ู…ูุฑุฏ ูุธุฑ  "1%"
+;ExistingFileReadOnly=ูุงูู ู…ูุฌูุฏ ุจุตูุฑุช ููุท ุฎูุงูุฏูู ุชูุธูู… ุดุฏู ุงุณุช %n%n ุฎูุงูุดู…ูุฏ ุงุณุช ุจุฑุงู ุญุฐู ููฺฺฏู ููุท ุฎูุงูุฏููุ ุจุฑุงู ุงุฒ ููู… ุงูุฏุงุฎุชู ุงูู ูุงูู ู  ูุง ุจุฑุงู ูุบู ฺฉุฑุฏู ูุตุจ ุงูุฏุงู… ฺฉููุฏ
+ExistingFileReadOnly=The existing file is marked as read-only.%n%nClick Retry to remove the read-only attribute and try again, Ignore to skip this file, or Abort to cancel installation.
+ErrorReadingExistingDest=: ูฺฉ ุฎุทุง ุฏุฑ ููฺฏุงู… ุฎูุงูุฏู ูุงูู ู…ูุฌูุฏ ุฑุฎ ุฏุงุฏ
+FileExists=ุงูู ูุงูู ุฏุฑ ุญุงู ุญุงุถุฑ ูุฌูุฏ ุฏุงุฑุฏ %n%nุขูุง ู…ูโ€ุฎูุงููุฏ ุงูู ูุงูู ุฑููููุณู ุดูุฏุ
+ExistingFileNewer=ูุงูู ู…ูุฌูุฏ ุฌุฏูุฏุชุฑ ุงุฒ ูุงููู ุงุณุช ฺฉู ุฏุฑ ูุตุจ ุจุฑูุงู…ู ูุฌูุฏ ุฏุงุฑุฏ. ุชูุตูู ู…ูโ€ุดูุฏ ฺฉู ูุงูู ู…ูุฌูุฏ ุฑุง ูฺฏู ุฏุงุฑูุฏ %n%nุขูุง ู…ูโ€ุฎูุงููุฏ ฺฉู ุงูู ูุงูู ู…ูุฌูุฏ ุฑุง ูฺฏู ุฏุงุฑูุฏุ
+ErrorChangingAttr=: ูฺฉ ุฎุทุง ุฏุฑ ููฺฏุงู… ุชูุงุด ุจุฑุงู ุชุบููุฑ ููฺฺฏูโ€ูุงู ุงูู ูุงูู ู…ูุฌูุฏ ุฑุฎ ุฏุงุฏ
+ErrorCreatingTemp=: ูฺฉ ุฎุทุง ุฏุฑ ููฺฏุงู… ุชูุงุด ุจุฑุงู ุณุงุฎุชู ูฺฉ ูุงูู ุฏุฑ ูพูุดู ู…ูุตุฏ ุฑุฎ ุฏุงุฏ
+ErrorReadingSource=: ูฺฉ ุฎุทุง ุฏุฑ ููฺฏุงู… ุชูุงุด ุจุฑุงู ุฎูุงูุฏู ูุงูู ู…ูุจุน ุฑุฎ ุฏุงุฏ
+ErrorCopying=: ูฺฉ ุฎุทุง ุฏุฑ ููฺฏุงู… ุชูุงุด ุจุฑุงู ฺฉูพู ูฺฉ ูุงูู ุฑุฎ ุฏุงุฏ
+ErrorReplacingExistingFile=: ูฺฉ ุฎุทุง ุฏุฑ ููฺฏุงู… ุชูุงุด ุจุฑุงู ุฌุงูฺฏุฒููู ูุงูู ู…ูุฌูุฏ ุฑุฎ ุฏุงุฏ
+ErrorRestartReplace=: ุฌุงูฺฏูุฒููู ูพุณ ุงุฒ ุฑุงูโ€ุงูุฏุงุฒู ู…ุฌุฏุฏ ูุงู…ููู ุจูุฏ
+ErrorRenamingTemp=: ูฺฉ ุฎุทุง ุฏุฑ ููฺฏุงู… ุชูุงุด ุจุฑุงู ุชุบููุฑ ูุงู… ูฺฉ ูุงูู ุฏุฑ ูพูุดู ู…ูุตุฏ ุฑุฎ ุฏุงุฏ
+ErrorRegisterServer= ูุงุชูุงูุงูู ุฏุฑ ุซุจุช   DLL/OCX: %1
+ErrorRegSvr32Failed=RegSvr32  ูุงู…ููู ุจูุฏ ุจุง ฺฉุฏ ุฎุฑูุฌู ู…ูุฑุฏ ูุธุฑ   %1
+ErrorRegisterTypeLib= ูุงุชูุงูู ุฏุฑ ุซุจุช ููุน ฺฉุชุงุจุฎุงูู :  %1
 
 ; *** Post-installation errors
-ErrorOpeningReadme=ํ ฮุว ฯั อํไ ำฺํ ศัวํ ฮๆวไฯไ Ýวํแ ซใัว ศฮๆวไป ัฮ ฯวฯ
-ErrorRestartingComputer=ัวๅ วไฯวา Þวฯั ศๅ ัํำสวัส ัวํวไๅ ไํำส.แุÝว วํไ วั ัว ศุๆั ฯำสํ วฬัว ไํฯ
+ErrorOpeningReadme=ูฺฉ ุฎุทุง ุฏุฑ ููฺฏุงู… ุชูุงุด ุจุฑุงู ุฎูุงูุฏู ูุงูู ยซู…ุฑุง ุจุฎูุงูยป ุฑุฎ ุฏุงุฏ
+ErrorRestartingComputer=ูุตุจ ูู…ูโ€ุชูุงูุฏ ุณูุณุชู… ุฑุง ุงุฒ ูู ุฑุงูโ€ุงูุฏุงุฒู ูู…ุงูุฏ. ุฎูุงูุดู…ูุฏ ุงุณุช ุงูู ฺฉุงุฑ ุฑุง ุจู ุตูุฑุช ุฏุณุชู ุงูุฌุงู… ุฏููุฏ
 
 ; *** Uninstaller messages
-UninstallNotFound=ๆฬๆฯ ไฯวัฯ.ไใํสๆวไ อะÝ ัฯ "%1" Ýวํแ
-UninstallOpenError=ไใํสๆวไฯ ศวาิๆฯ.ไใํสๆวไ อะÝ ัฯ "%1" Ýวํแ
-UninstallUnsupportedVer=ฯัํ Ýัใส ิไวำวํํ ไิฯๅ ศว วํไ ไำฮๅ วา อะÝ ไไฯๅ ๅำส.ไใํสๆวไ อะÝ ัฯ "%1" Ýวํแ ๆÞวํฺ อะÝ
-UninstallUnknownEntry=ใๆวฬๅ ิฯๅ ฯั ๆÞวํฺ อะÝ (%1) ํ ๆัๆฯํ ไวใิฮี
-ConfirmUninstall=ัว ศุๆั วใแ อะÝ ไํฯฟ %1 ยํว ใํฮๆวๅํฯ
-UninstallOnlyOnWin64=วํไ ัวๅ วไฯวา สไๅว ใํสๆวไฯ วา ัๆํ ๆํไฯๆาๅวํ 64ศํสํ อะÝ ิๆฯ
-OnlyAdminCanUninstall=วํไ ัวๅ วไฯวา สไๅว ใํสๆวไฯ ศๅ ๆำํแๅ วัศัํ ศว วใสํวาวส ใฯํัํสํ อะÝ ิๆฯ
-UninstallStatusLabel=วา ัวํวไๅ ใไสูั ศใวไํฯ %1 แุÝว สว าใวไ อะÝ
-UninstalledAll=ศว ใๆÝÞํส วา ัวํวไๅ ิใว อะÝ ิฯ %1
-UninstalledMost=วใแ ิฯ %1 อะÝ%n%nศฺึํ วา Ýวํแๅว อะÝ ไิฯไฯกยไๅว ัว ใํสๆวไํฯ ฯำสํ อะÝ ไํฯ
-UninstalledAndNeedsRestart=ัวํวไๅ ศวํฯ ัํำสวัส ิๆฯ %1 ศัวํ วใแ ิฯไ อะÝ%n%nอวแว สใวํแ ศๅ ัํำสวัส ฯวัํฯฟ
-UninstallDataCorrupted=ฮัวศ ๅำส.ไใํสๆวไ อะÝ ัฯ "%1" Ýวํแ
+UninstallNotFound=ูุฌูุฏ ูุฏุงุดุชู ูุงูู ู…ูุฑุฏ ูุธุฑ  "%1" %nุญุฐู ู…ู…ฺฉู ููุณุช 
+UninstallOpenError=ุจุงุฒ ูุดุฏู ูุงูู ู…ูุฑุฏ ูุธุฑ  "%1" %nุญุฐู ู…ู…ฺฉู ููุณุช 
+UninstallUnsupportedVer=The uninstall log file "%1" is in a format not recognized by this version of the uninstaller. Cannot uninstall
+UninstallUnsupportedVer=ูุงูู ฺฏุฒุงุฑุด ุญุฐู ุจุฑูุงู…ู ุฏุฑ ุดฺฉูู ุงุณุช ฺฉู ุจุฑุงู ุงูู ูุณุฎู ุงุฒ ุจุฑูุงู…ู ูุงุจู ุชุดุฎูุต ููุณุช. ุญุฐู ู…ู…ฺฉู ููุณุช
+UninstallUnknownEntry=ุจุง ูฺฉ ูุฑูุฏู ูุงู…ุดุฎุต( ุจุฑูุงู…ู )ุฏุฑ ฺฏุฒุงุฑุด ุญุฐู ู…ูุงุฌู ุดุฏู ุงุณุช
+ConfirmUninstall= ุขูุง ุงุทู…ููุงู ุฏุงุฑูุฏ ฺฉู ู…ูโ€ุฎูุงููุฏ ุงูู ุจุฑูุงู…ู ู ุชู…ุงู… ุงุฌุฒุงู ุขู ุฑุง ุญุฐู ฺฉููุฏุ  
+UninstallOnlyOnWin64=ุงูู ูุตุจ ุชููุง ู…ูโ€ุชูุงูุฏ ุงุฒ ุฑูู ูููุฏูุฒโ€ูุงู 64ุจูุชู ุญุฐู ุดูุฏ
+OnlyAdminCanUninstall=ุงูู ูุตุจ ุชููุง ู…ูโ€ุชูุงูุฏ ุจู ูุณููู ฺฉุงุฑุจุฑู ุจุง ุงู…ุชูุงุฒุงุช ู…ุฏูุฑูุชู ุญุฐู ุดูุฏ
+UninstallStatusLabel=ุฎูุงูุดู…ูุฏ ุงุณุช ุตุจุฑ ฺฉููุฏ ุชุงุงูู ุจุฑูุงู…ู ุจุทูุฑ ฺฉุงู…ู ุงุฒ ุฑุงูุงูู ุดู…ุง ุญุฐู ุดูุฏ
+UninstalledAll=ุจุง ู…ููููุช ุงุฒ ุฑุงูุงูู ุดู…ุง ุญุฐู ุดุฏ  %1
+UninstalledMost=ุญุฐู ุจุฑูุงู…ู ฺฉุงู…ู ุดุฏ%n%nุจุนุถู ุงุฒ ุจุฎุดโ€ูุง ุญุฐู ูุดุฏูุฏ. ุขููุง ุฑุง ู…ูโ€ุชูุงููุฏ ุจู ุตูุฑุช ุฏุณุชู ุญุฐู ฺฉููุฏ
+UninstalledAndNeedsRestart=ุจุฑุงู ุงุชู…ุงู… ุญุฐู ุจุฑูุงู…ู ุ ุฑุงูุงูู ุดู…ุง ุจุงูุฏ ุฑุงูโ€ุงูุฏุงุฒู ู…ุฌุฏุฏ ุดูุฏ. ุขูุง ู…ูโ€ุฎูุงููุฏ ูู…โ€ุงฺฉููู ุฑุงูุงูู ุฎูุฏ ุฑุง ุฑุงูโ€ุงูุฏุงุฒู ู…ุฌุฏุฏ ฺฉููุฏุ
+UninstallDataCorrupted=ูุงูู ู…ูุฑุฏ ูุธุฑ  "%1"  ุฎุฑุงุจ ุดุฏู ุงุณุช. ุญุฐู ู…ู…ฺฉู ููุณุช
 
 ; *** Uninstallation phase messages
-ConfirmDeleteSharedFileTitle=Ýวํแๅวํ ใิสั ศว ำวํั ไัใ วÝาวัๅว ๅใ อะÝ ิๆไฯฟ
-ConfirmDeleteSharedFile2=ำํำสใ สิฮํี ฯวฯๅ ๅ Ýวํแ วิสัวํ าํั ใฯสํ วำส สๆำุ ๅํ ศัไวใๅวํ วำสÝวฯๅ ไิฯๅ วำส. ยํว สใวํแํ ศัวํ อะÝ วํไ Ýวํแ วิสัวํ ฯวัํฯฟ%n%nวั ศัไวใๅๅวํํ ๅไๆา วา วํไ Ýวํแ วำสÝวฯๅ ใํไไฯ ๆ วํไ Ýวํแ อะÝ ิๆฯก ใใไ วำส ยไ ศัไวใๅๅว ศๅ ฯัำสํ วั ไไไฯ. วั วุใํไวไ ไฯวัํฯ ฮํั ัว วไสฮวศ ไํฯ.ใวไฯไ วํไ Ýวํแ ฯั ำํำสใ ิใว ใิแํ ํิ ไใํยๆัฯ
-SharedFileNameLabel=ไวใ Ýวํแ:
-SharedFileLocationLabel=ใวไ:
-WizardUninstalling=ๆึฺํส อะÝ ศัไวใๅ
-StatusUninstalling=...%1 ฯั อวแ อะÝ
-
-; *** Shutdown block reasons
-ShutdownBlockReasonInstallingApp=%1 ไีศ
-ShutdownBlockReasonUninstallingApp=%1 ฯั อวแ อะÝ
+ConfirmDeleteSharedFileTitle=ูุงููโ€ูุงู ุงุดุชุฑุงฺฉู ูู… ุญุฐู ุดููุฏุ
+ConfirmDeleteSharedFile2=ุณูุณุชู… ุชุดุฎูุต ุฏุงุฏู ุงุณุช ฺฉู ูุงูู ุงุดุชุฑุงฺฉู ุฒูุฑ ุฎููู ููุช ุงุณุช ุชูุณุท ููฺ ุจุฑูุงู…ูโ€ุงู ุงุณุชูุงุฏู ูุดุฏู ุงุณุช. ุขูุง ู…ูโ€ุฎูุงููุฏ ุจุฑุงู ุญุฐู ุงูู ูุงูู ุงุดุชุฑุงฺฉู ููุฒ ุญุฐู ุดูุฏุ%n%nุงฺฏุฑ ุจุฑูุงู…ูโ€ูุงูู ูููุฒ ุงุฒ ุงูู ูุงูู ุงุณุชูุงุฏู ู…ูโ€ฺฉููุฏ ู ุงูู ูุงูู ุญุฐู ุดูุฏุ ู…ู…ฺฉู ุงุณุช ุขู ุจุฑูุงู…ูโ€ูุง ุจู ุฏุฑุณุชู ฺฉุงุฑ ูฺฏููุฏ %nุงฺฏุฑ ุงุทู…ููุงู ูุฏุงุฑูุฏ ุฎูุฑ ุฑุง ุงูุชุฎุงุจ ฺฉููุฏ. ุจุงูู ู…ุงูุฏู ุงูู ูุงูู ุฏุฑ ุณูุณุชู… ุดู…ุง ู…ุดฺฉูู ูพูุด ูู…ูโ€ุขูุฑุฏ
+SharedFileNameLabel=: ูุงู… ูุงูู
+SharedFileLocationLabel=: ู…ฺฉุงู
+WizardUninstalling= ูุถุนูุช ุญุฐู ุจุฑูุงู…ู 
+StatusUninstalling=%1 ุฏุฑ ุญุงู ุญุฐู ฺฉุฑุฏู...
 
 ; The custom messages below aren't used by Setup itself, but if you make
 ; use of them in your scripts, you'll want to translate them.
 
 [CustomMessages]
+;Inno Setup Built-in Custom Messages
+NameAndVersion=%1  ููุฑุงูุด  %2
+AdditionalIcons=
+OptionalFeatures=Optional Features:
+CreateDesktopIcon=ุงูุฌุงุฏ ู…ูุงูุจุฑ ุจู ู…ูุฒฺฉุงุฑ
+CreateQuickLaunchIcon=Quick Launch ุงูุฌุงุฏ ู…ูุงูุจุฑ ุจู 
+ProgramOnTheWeb=ูุจุณุงูุช %1
+UninstallProgram=ุญุฐู %1
+LaunchProgram=ุจุงุฒ ฺฉุฑุฏู %1
+AssocFileExtension=ูุงุจุณุชู ฺฉุฑุฏู  %1  ุจุง ูุงูุจ ูุงูู  %2
+AssocingFileExtension=ุฏุฑ ุญุงู ูุงุจุณุชู ฺฉุฑุฏู  %1  ุจุง ูุงูุจ ูุงูู  %2...
 
-NameAndVersion=%1 %2
-AdditionalIcons=ยํๆไ วึวÝํ:
-CreateDesktopIcon=วํฬวฯ ใํวไศั ฯำสว
-CreateQuickLaunchIcon=วํฬวฯ ใํวไศั ว๖ฬัวํ ำัํฺ
-ProgramOnTheWeb=%1 ฯั ๆศ
-UninstallProgram=%1 อะÝ
-LaunchProgram=%1 ิัๆฺ
-AssocFileExtension=ๆวศำสๅ ำวาํ %1 ศว %2 ำๆไฯ Ýวํแ&
-AssocingFileExtension=ๆวศำสๅ ำวาํ %1 ศว %2 ำๆไฯ Ýวํแ
-AutoStartProgramGroupDescription=ว๖ำสวัส ย:
-AutoStartProgram=%1 ิัๆฺ ฮๆฯวั
-AddonHostProgramNotFound=%1 ไใํสๆวไฯ ฯั ๆิๅ วํ ๅ วไสฮวศ ัฯํฯ ใวไ ํวศํ ิๆฯ.%n%nศๅัอวแ ใํฮๆวๅํฯ วฯวใๅ ฯๅํฯฟ
+;Things we can also localize
+CompanyName=Thingamahoochie Software
+
+;Types
+TypicalInstallation=Typical Installation
+FullInstallation=Full Installation
+CompactInstallation=Compact Installation
+CustomInstallation=Custom Installation
+
+;Components
+AppCoreFiles=WinMerge Core Files
+Filters=Filters
+Plugins=Plugins
+
+;Localization Components
+Languages=Languages
+BulgarianLanguage=Bulgarian menus and dialogs
+CatalanLanguage=Catalan menus and dialogs
+ChineseSimplifiedLanguage=Chinese (Simplified) menus and dialogs
+ChineseTraditionalLanguage=Chinese (Traditional) menus and dialogs
+CroatianLanguage=Croatian menus and dialogs
+CzechLanguage=Czech menus and dialogs
+DanishLanguage=Danish menus and dialogs
+DutchLanguage=Dutch menus and dialogs
+FarsiLanguage=Farsi(Persian) menus and dialogs
+FrenchLanguage=French menus and dialogs
+GalicianLanguage=Galician menus and dialogs
+GermanLanguage=German menus and dialogs
+GreekLanguage=Greek menus and dialogs
+HungarianLanguage=Hungarian menus and dialogs
+ItalianLanguage=Italian menus and dialogs
+JapaneseLanguage=Japanese menus and dialogs
+KoreanLanguage=Korean menus and dialogs
+NorwegianLanguage=Norwegian menus and dialogs
+PolishLanguage=Polish menus and dialogs
+PortugueseBrazilLanguage=Portuguese (Brazilian) menus and dialogs
+PortugueseLanguage=Portuguese menus and dialogs
+RomanianLanguage=Romanian menus and dialogs
+RussianLanguage=Russian menus and dialogs
+SlovakLanguage=Slovak menus and dialogs
+SlovenianLanguage=Slovenian menus and dialogs
+SpanishLanguage=Spanish menus and dialogs
+SwedishLanguage=Swedish menus and dialogs
+TurkishLanguage=Turkish menus and dialogs
+UkrainianLanguage=Ukrainian menus and dialogs
+
+;Tasks
+ExplorerContextMenu=&Enable Explorer context menu integration
+IntegrateTortoiseCVS=Integrate with &TortoiseCVS
+IntegrateTortoiseSVN=Integrate with T&ortoiseSVN
+IntegrateClearCase=Integrate with Rational &ClearCase
+AddToPath=&Add WinMerge folder to your system path
+
+;Icon Labels
+ReadMe=Read Me
+UsersGuide=User's Guide
+ViewStartMenuFolder=&View the WinMerge Start Menu Folder
+
+;Code Dialogs
+DeletePreviousStartMenu=The installer has detected that you changed the location of your start menu from "%s" to "%s". Would you like to delete the previous start menu folder?
+
+; Project file description
+ProjectFileDesc=WinMerge Project file
